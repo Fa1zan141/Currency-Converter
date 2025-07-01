@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="converter">
+      <h1>Currency Converter</h1>
+      <form autocomplete="off" id="currencyForm">
+        <label for="amount" class="amount">Enter Amount</label>
+        <input type="text" name="amount" value="1" placeholder="Enter amount" />
+        <div class="currency">
+          <div class="currency-block">
+            <label for="fromInput">From</label>
+            <img src="https://flagsapi.com/US/flat/64.png" alt="Flag" class="FromImage" />
+            <div class="autocomplete" style="width: 150px;">
+              <input id="fromInput" type="text" placeholder="Search currency" />
+            </div>
+          </div>
+          <i class="fa-solid fa-right-left"></i>
+          <div class="currency-block">
+            <label for="toInput">To</label>
+            <img src="https://flagsapi.com/PK/flat/64.png" alt="Flag" class="ToImage" />
+            <div class="autocomplete" style="width: 150px;">
+              <input id="toInput" type="text" placeholder="Search currency" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="rate">1 USD ~ 283 PKR</p>
+        </div>
+        <button type="submit" class="btn">Convert Currency</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
